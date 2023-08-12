@@ -1,4 +1,3 @@
-print(1)
 
 
 def say_hello(name):
