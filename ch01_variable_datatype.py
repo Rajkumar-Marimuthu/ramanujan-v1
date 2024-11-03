@@ -22,11 +22,15 @@ x = 1j
 x = complex(1j)
 
 # Sequence Types:	list, tuple, range
-x = ["apple", "banana", "cherry"]  # list
+x = ["apple", "banana", "cherry"]  # list - mutable, slower
 x = list(("apple", "banana", "cherry"))
-x = ("apple", "banana", "cherry")  # tuple
+x = ("apple", "banana", "cherry")  # tuple - immutable, faster
 x = tuple(("apple", "banana", "cherry"))
 x = range(6)  # range
+
+#  a tuple with a single item requires a trailing comma to differentiate it from a regular value inside parentheses.
+single_item_tuple = (1,)
+print(single_item_tuple)
 
 # Mapping Type:	dict
 x = {"name": "John", "age": 36}  # dict
