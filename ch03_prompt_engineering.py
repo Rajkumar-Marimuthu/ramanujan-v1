@@ -29,7 +29,7 @@ def get_completion(prompt, model="gpt-4o-mini"):
         messages=messages,
         temperature=0
     )
-    return response.choices[0].message
+    return response.choices[0].message.content
 
 response = get_completion(prompt)
 print(response)
